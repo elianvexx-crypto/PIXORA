@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXORA | Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+<link rel="icon" type="image/png" href="pixora-icon.png">
+</head>
+<body class="home-page">
+    <header>
+        <h1>PIXORA</h1>
+        <p>Explore the world through photos.</p>
+    </header>
+
+    <main>
+<!-- animation -->
+ 
+
+<div class="welcome-container">
+    <div class="welcome-track">
+        <span>WELCOME TO PIXORA ✨</span>
+        <span>WELCOME TO PIXORA ✨</span>
+    </div>
+</div>
+
+
+         <div class="search-box">
+
+    <input type="text" id="searchInput"
+        placeholder="Search your favorite photos...">
+
+    <button id="searchBtn">Search</button>
+
+    <div class="category-selector">
+
+        <button id="categoryMenuBtn" title="Select Category">
+            ⋮
+        </button>
+
+        <div class="category-dropdown" id="categoryDropdown">
+
+            <button data-category="all">🌐 All Categories</button>
+            <button data-category="nature">🌿 Nature</button>
+            <button data-category="cars">🏎️ Cars</button>
+            <button data-category="anime">🎌 Anime</button>
+            <button data-category="animals">🐾 Animals</button>
+            <button data-category="city">🌃 City</button>
+            <button data-category="gaming">🎮 Gaming</button>
+            <button data-category="travel">✈️ Travel</button>
+            <button data-category="sports">🏆 Sports</button>
+            <button data-category="space">🚀 Space</button>
+            <button data-category="architecture">🏛️ Architecture</button>
+            <button data-category="food">🍔 Food</button>
+            <button data-category="fashion">👗 Fashion</button>
+
+        </div>
+
+    </div>
+
+</div>
+        
+
+<section class="categories">
+    <h2>Explore Categories</h2>
+
+   
+
+        
+        
+<div class="category-list">
+
+    <button onclick="window.location.href='nature.html'">
+        <span class="category-icon">🌿</span> Nature
+    </button>
+
+    
+
+<button onclick="playCarSound()" class="cars-button">
+    <span class="category-icon">🏎️</span> Cars
+</button>
+
+
+
+
+
+    
+<button onclick="window.location.href='anime.html'">
+    <span class="category-icon">🎌</span> Anime
+</button>
+<!-- animal page  -->
+    
+<button onclick="window.location.href='animals.html'">
+    <span class="category-icon">🐾</span> Animals
+</button>
+
+<!-- animal page end -->
+    <button onclick="window.location.href='city.html'">
+        <span class="category-icon">🌃</span> City
+    </button>
+
+    <button onclick="window.location.href='gaming.html'">
+    🎮 Gaming
+</button>
+
+
+
+    <button onclick="window.location.href='travel.html'">
+    ✈️ Travel
+</button>
+
+    <button onclick="window.location.href='sports.html'">
+    🏆 Sports
+</button>
+
+    <button onclick="window.location.href='space.html'">
+    🚀 Space
+</button>
+
+    <button onclick="window.location.href='architecture.html'">
+    <span class="category-icon">🏛️</span>
+    Architecture
+</button>
+
+    <button onclick="window.location.href='food.html'">
+    <span class="category-icon">🍔</span> Food
+</button>
+
+    
+<button onclick="window.location.href='fashion.html'">
+    <span class="category-icon">👗</span> Fashion
+</button>
+
+
+
+</div>
+<div id="nitroEffect">
+
+    <div class="speed-lines"></div>
+
+    <div class="racing-title">
+        🏎️ CAR COLLECTION 🏎️
+    </div>
+
+    <div class="racing-car">
+        🏎️💨
+    </div>
+
+    <div class="light-flash"></div>
+
+</div>
+<!-- animation -->
+</section>
+
+</main>
+    
+
+        <div class="photo-viewer" id="photoViewer">
+
+    <div class="viewer-content">
+
+        <button id="closeViewer">✕</button>
+
+        <img id="fullScreenPhoto" src="" alt="Full Screen Photo">
+
+        <div class="viewer-like-area">
+            <button id="viewerLikeButton">❤️ Like</button>
+            <span id="viewerLikeCount">❤️ 0 Likes</span>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+     <!-- dilmeth -->
+      
+
+
+<footer class="pixora-footer">
+
+    <h2>PIXORA</h2>
+
+    <p class="footer-description">
+        Discover a world of beautiful images.
+        Explore amazing photography, stunning wallpapers,
+        creative artwork and unforgettable moments.
+        Find inspiration in every picture and enjoy
+        the beauty of the visual world.
+    </p>
+
+    <div class="footer-glow-line">
+        <span>✦</span>
+    </div>
+
+    <div class="footer-bottom">
+
+        <p class="created-by">
+            <span class="creator-icon">👤</span>
+            CREATED BY : <span class="creator-name">DILMETH</span>
+        </p>
+
+        <div class="powered-section">
+
+    <p class="powered-by">
+        POWERED BY <span class="isd-name">ISD</span>
+        <span class="isd-icon">ϟ</span>
+    </p>
+
+    <p class="version-number">VERSION 1.0.1</p>
+
+</div>
+
+    </div>
+
+    <p class="latest-update">
+        ✨ Latest Update: 2026/11/10
+    </p>
+
+    <small>© 2026 PIXORA | All Rights Reserved</small>
+
+</footer>
+
+
+
+</body>
+</html>
+
