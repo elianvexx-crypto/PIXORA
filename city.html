@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXORA | City</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>PIXORA</h1>
+        <p>Explore Amazing Cities 🌃</p>
+    </header>
+
+    <button class="back-home-btn" onclick="window.location.href='index.html'">
+        <span>←</span> Back to Home
+    </button>
+
+    <section class="gallery">
+        <h2>City Collection 🌃</h2>
+
+        <div class="gallery-container" id="cityGallery">
+        </div>
+    </section>
+
+    <div class="photo-viewer" id="photoViewer">
+
+        <div class="viewer-content">
+
+            <button id="closeViewer">✕</button>
+
+            <img id="fullScreenPhoto" src="" alt="Full Screen Photo">
+
+            <div class="viewer-like-area">
+                <button id="viewerLikeButton">❤️ Like</button>
+
+                <span id="viewerLikeCount">❤️ 0 Likes</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+<footer class="category-footer">
+    <h2>POWERED BY ISD <span>ϟ</span></h2>
+</footer>
+</body>
+</html>
